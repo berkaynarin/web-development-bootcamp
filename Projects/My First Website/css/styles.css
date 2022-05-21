@@ -1,0 +1,105 @@
+/*!(inside the style tag you can affect the tags that you want
+   by using CSS init.)! (INTERNAL WAY)
+   INSTEAD OF USING INTERNAL CSS LIKE STYLE TAG IN HTML FILE,
+   NOW WE CAN CHANGE THE STYLE OF THE PAGE WITH USING EXTERNAL CSS (THIS FILE) (EXTERNAL WAY)*/
+
+/*------------TAG SELECTORS--------------------- */
+body{
+  background-color: #dbf6e9;
+
+  /*We can change a style of specific tag by using 3 different ways.
+  1- Inline CSS
+  2- Internal CSS
+  3- External CSS
+  and this is the order for CSS to apply those changes.
+  If you change body's background color both inline and external,
+  it shows the inline CSS on the page.
+  You can see via Chrome Dev Tools in (elements / styles) section: ; to which styles applied to that tag
+  by clicking the tag.
+  */
+}
+
+/* You are changing all of the hr element's proporites in the code.*/
+hr{
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 7px;
+  width: 10%;
+}
+
+h1{
+  color: #66BFBF;
+}
+
+h3{
+  color: #66BFBF;
+}
+
+a:hover{ /*When we over the mouse on anchor tag*/ /*These are called pseudo classes
+                                                    and it works when a state change.
+                                                    State means like different action.
+                                                    For example when we hover a mouse on
+                                                    a link. It comes after tag, class or id's name
+                                                    and have a ':' at beginning.
+                                                    So the syntax is;
+
+                                                    selector:pseudoclass {
+                                                      property: value;
+                                                    }
+                                                     */
+  color: #ff9d72;
+}
+
+/*---------------CLASS SELECTORS---------------*/
+
+.profile_picture{
+  height: 200px;
+}
+
+/*You can change styles of your tag by classes.
+ For classes you just need a dot before your class name.
+ If you dont want to affect all of the image tags,
+ then you can define class inside the tags and change
+ the classes.
+ It doesnt matter the where you define the classes.
+ You can define same class in the h1 and img tag
+ and affect them in the same way
+
+  Class selectors are more powerful than tag selectors
+  Because it's more specific, so if you change the design of
+  all img tags by using tag selector and then if you assign a class
+  to one of the img tag's then the browser will show the class selectors value
+
+ */
+
+
+ /*-----------------ID SELECTORS--------------------*/
+
+ #skill_table {
+   background-color: #dbf6e9;
+ }
+
+ #skill_table:hover {
+   background-color: #f4eeed;
+ }
+
+/*
+    There is also ID selectors and it mostly works same as classes.
+    But there are 2 main differences;
+
+    1- You can't have more than one ID in a page
+    2- A HTML tag can't have more than one ID's. Because for classes
+       a tag can have more than one class like;
+         h1<class="table heading"> (classes separate with spaces)
+      but you cant have a tag like this;
+        h1<id="table heading">.
+
+    Most of the time classes are used and even the Atom itself doesnt recommend
+      to use id's but in some cases it can be helpful.
+      For example if you have just one heading tag in your page, then
+        you can assign a id for that tag.
+
+    Also ID selectors are more powerful(specific) than class selectors.
+
+ */

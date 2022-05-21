@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/styles.css">  <!--It's a link tag and
+                                                      it direct to an external page
+                                                      rel attribute is define the relation
+                                                    and href is the file location that you want to link. -->
+  </head>
+  <body>
+    <h3>You can send me a message through this page.</h3>
+
+    <form action="mailto:berkaynarin25@gmail.com" method="post" enctype="text/plain"> <!--action'ı index.html yerine mailto olarak değiştirdik çünkü kullanıcı
+    mesajını submit'lediği zaman ana sayfaya dönmesini değil bilgisayarın default maill app'inde
+  default olarak bizim yazdığımız mail adresine mail atıcak şekilde bir pencere açmasını istiyoruz.
+En sonda eklediğimiz enctype (encoding type) kullanıcın yazdığı şeylerin nasıl encode edileceğini söylüyor
+eğer onu eklemeseydik kullanıcının yazdığı metinin içinde '? /' gibi semboller olucaktı-->
+
+      <label for="">Your Name:</label>
+      <input type="text" name="Name:" value=""> <br> <br> <!--when we change the name attribute from null
+                                                          to Name: , it's recognizes the pattern and
+                                                          put the Name: Berkay in the email
+                                                          tam açıklayamadım deneyip gör-->
+      <label for="">Your Email:</label>
+      <input type="email" name="Email:" value=""> <br> <br> <!--It recognizes the email type and
+                                            warn the user if there's any miswriting for user's email -->
+      <label for="">Your Message:</label><br>
+      <textarea name="Message:" rows="10" cols="30"></textarea> <br> <!--input text yerine bunu kullandık çünkü
+                                                            daha geniş text yazılabiliyor ve textbox'ın
+                                                            büyüklüğünü sen ayarlayabiliyorsun-->
+      <input type="submit" name="" value="Submit">
+    </form>
+  </body>
+</html>

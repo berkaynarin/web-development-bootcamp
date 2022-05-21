@@ -1,0 +1,24 @@
+/*---------------TAG SELECTORS----------- */
+
+h1{
+  color: red;
+  font-size: 150px; /* It's better to put your CSS attributes in alphabetical order */
+}
+
+/*------------ CLASS SELECTORS------------- */
+
+.tomato{
+  width: 5%;
+}
+ /*You can change styles of your tag by classes.
+  For classes you just need a dot before your class name.
+  If you dont want to affect all of the image tags,
+  then you can define class inside the tags and change
+  the classes.
+  It doesnt matter the where you define the classes.
+  You can define same class in the h1 and img tag
+  and affect them in the same way */
+.bacon{
+  width: 15%;
+  background-color: blue;
+}

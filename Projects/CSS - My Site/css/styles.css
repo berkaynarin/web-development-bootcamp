@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  /*Bütün marginleri teker teker seçmek yerine hepsini 0'a eşitledik.
+                Default browser CSS'lerinin üstüne external CSS ile de yazabilirsin.
+                Inline veya internal olmasına gerek yok.  */
+  text-align: center;
+  /*width property'si olmayan bütün element'leri center'a taşıyor */
+}
+
+h1 {
+  margin: 50px auto 0 auto; /*top right bottom left margins*/
+  /*Eğer değer 0'sa unit belirlemene gerek yok */
+  font-family: 'Sacramento', cursive;
+  /* If the sacremento font can't be installed via our
+                                        link to google fonts then it'll use cursive instead.*/
+  font-size: 5rem;
+  /* We could use dynamic sizing ('%' or 'em' ) or static sizing(px)
+                    But static sizing does not fit for user's browsers viewing options
+                    If the user changed the text size to large static sized elements does not change
+                    For dynamic size it respects to user choice but because of it's inherited from
+                    parent tag, it'll add up 2 different font size property.
+                    Let's say you got 20% for h1's in body and then you got for 40% for h1's in specific
+                    So the h1's in the page will have 60% sizing which we don't wanted to.
+                    In order to get rid of all of these issues, we're using 'rem'.
+                    It respects user's choice and it doesn't inherit from the parent tag.
+
+  */
+  color: #66BFBF;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #66BFBF;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #11999E;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  top: 10px;
+}
+
+a {
+  color: #11999E;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #cfd3ce;
+  border-width: 7px;
+  width: 5%;
+  margin: auto auto 100px auto;
+}
+
+/*-------------------Class Selectors------------------------ */
+.top-container {
+  background-color: #eff8ff;
+  position: relative;
+  /* cloud'ları absolute yaptığımız için bunu da relative yapmamız lazım
+                          parent'ı bu olsun ve buna relative olsun istiyoruz */
+  padding-top: 100px;
+  padding-bottom: 0;
+  line-height: 1.5;
+}
+
+.a-programmer-span {
+  font-weight: normal;
+}
+
+.mountain {
+  display: inline-block;
+}
+
+/*There are 4 options for CSS's display property.
+  1-block
+  2-inline
+  3-inline-block
+  4-none
+  block is blocking the other elements and don't let them to stay next to it,
+  inline is let the other elements stay next to it but you CAN'T change width with inline
+  inline-block is both of them it's let the elements stay with it and you can change the width
+  none is just don't show the element but stay the space that element have
+  if you want to make it disappear an element totally, you can use 'visibility: hidden' */
+.top-cloud {
+  display: inline-block;
+  position: absolute;
+  /*top container'a göre position alması için absolute verdik */
+  right: 300px;
+  top: 50px;
+}
+
+.h1 {
+  display: block;
+}
+
+/*-----------------POSITIONING ---------------*/
+/*1- static position default olarak gelen ve sabit durduğu position çeşidi
+2- position'ı relative yaptığımız zaman, default html positioning'e göre relative oluyor.
+ mesela right: 50px dediğim zaman, eski bulunduğu yerin sağından 50px'lik margin olsun diyorum
+ 3- position'i absolute yaptığımız zaman, parent'a göre marginleri ayarlıyorsun,
+eğer body tag'inin içinde div tanımlarsan ve right: 20px verirsen, body'nin sağında 20px'lik margin olucak
+4- position: fixed olduğunda ise o element olduğu yere fix'leniyor ve sabit kalıyor
+çoğu sitede sağda olan navigation bar gibi düşünebilirsin
+   */
+.bottom-cloud {
+  position: absolute;
+  bottom: 300px;
+  left: 300px;
+}
+
+.coding-gif {
+  width: 25%;
+  float: left; /*It will put the image to the left of the text*/
+  margin-right: 30px;
+}
+
+.game-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+/*.skill-p {
+  clear: left; It will clear the left margin of the text. So no item can stand next to it.
+}
+
+.game-p {
+  clear: right;
+}*/
+
+.profile {
+  width: 25%;
+  margin: 80px auto 80px auto;
+}
+
+.contact-me {
+  width: 50%;
+  margin: 80px auto 80px auto;
+  line-height: 2;
+}
+
+.BUTTON_MFM {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   height: 30px;
+   line-height: 30px;
+   color: #FFFFFF;
+   font-family: Arial;
+   width: 200px;
+   font-size: 24px;
+   font-weight: 100;
+   padding: 9px;
+   background-color: #28C3D4;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.BUTTON_MFM:hover {
+   background: #9ad3bc;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  height: 100px;
+  padding-top: 50px;
+}
+
+.footer-text {
+  font-size: 15px;
+  color: #eaf6f6;
+  padding-top: 20px;
+}
+
+.footer-link {
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}

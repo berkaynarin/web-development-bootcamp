@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Berkay's Website</title>
+  <link rel="stylesheet" href="css/styles.css">  <!--It's a link tag and
+                                                    it directs to an external page
+                                                    rel attribute is define the relation
+                                                  and href is the file location that you want to link. -->
+<!--
+
+<style>
+ You can change styles in this way also but it's not recommended.
+ It's called internal CSS.
+</style>
+
+-->
+</head>
+
+  <!-- style="background-color: #d0e8f2;"
+  It's changing the background color of the page
+  because most item of the page is in the body tag
+  so we're changing the body tag's attribute , or you can do this in the head tag with
+style tag. Look up! -->
+<!-- <body style="background-color: blue">  You can also change the style of the <body>
+                                            in this way but it's not recommended
+                                            and it's called inline CSS; 
+</body> -->
+<body>
+  <table cellspacing = "30">
+    <tr>
+      <td>
+        <img class ="profile_picture" src="images\profile_picture_cropped.png" alt="My Profile Picture">
+        <!--We can put url into a source but it's not the best practice because the server that holds that image can shut down in the future
+      so, mostly put your local image files to the source. alt attribute is, helps the user to identify the image if browser can't render the image,
+    so, instead of image it will just show a text that we wrote, if the browser can't render the image-->
+      </td>
+      <td>
+        <h1>Berkay Narin</h1>
+        <p><em><a href="https://www.google.com/search?q=computer+science">Computer Science</a><strong> Student</strong></em></p>
+        <!--We used em and strong instead of i and bold because they have meaning-->
+        <br>
+        <!--Makes a blank space-->
+          <p>I'm a terrible engineer</p>
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+  <!--Puts a horizontal line-->
+  <h3><strong>Courses that I took</strong></h3>
+  <ul>
+    <!--Put an unordered list-->
+    <li>Engineering</li>
+    <!--list item-->
+    <li>Science</li>
+    <ul>
+      <!--Under the Science we want to add child list or item so we open another unordered list-->
+      <li>Space</li>
+    </ul>
+  </ul>
+  <h3>What he did in his early 20's</h3>
+  <ol type = "i"> <!--It's an ordered list tag and you can define in which type you want to order your list-->
+    <li><a href="covid_19.html">Caught COVID-19</a> (You can see my notes about COVID via link)</li>
+    <li>Got depressed</li>
+      <ol start = "3"> <!--You can tell the tag which number it should start the ordering-->
+        <li>Took medicine</li>
+        <li><a href="https://www.youtube.com/watch?v=oeX1XXQNi-Q">Run</a></li>
+        <!--anchor tag (a) is a tag that you can use for link the links and before you close the tag you can write the name of that link-->
+      </ol>
+  </ol>
+
+<hr>
+<!--!!!!!!!!!!!TABLE!!!!!!!!!-->
+  <h4><strong>Skills</strong></h4>
+  <table id = "skill_table" border="1" cellspacing = "10"> <!-- puts border to the table and it's unit is in pixels-->
+    <tr>
+      <th><strong>Languages</strong></th> <!-- It's a header tag for the table, it's like the title of the column -->
+      <th><strong>Ability</strong></th>
+    </tr>
+    <tr>
+      <td>HTML</td> <!-- You can just copy and paste emojis from here; https://emojipedia.org/ -->
+      <td>⭐⭐⭐</td> <!-- It puts MongoDB to right-->
+    </tr>
+    <tr>
+      <td>CSS</td>
+      <td>⭐⭐</td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td>⭐</td>
+    </tr>
+</table>
+<hr>
+
+<h3><strong>You can contact me via the link below 👇</strong></h3>
+<a href="contact_me.html"> Contact Me!</a>
+
+</body>
+
+</html>

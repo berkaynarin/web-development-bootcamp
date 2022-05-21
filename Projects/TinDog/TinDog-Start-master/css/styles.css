@@ -1,0 +1,194 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+  color: #7e7474;
+  font-size: 18px;
+}
+
+/*Navigation Bar*/
+
+.nav-item {
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
+
+.navbar {
+  padding: 0 0 80px;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+
+/*Buttons*/
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/*Sections*/
+
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section{
+  background-color: #fff;
+}
+
+/*Title Section*/
+
+#title .container-fluid { /*It'll apply only the container-fluid class inside the title section */
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+}
+
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+  @media (max-width: 1028px) {
+
+    #title {
+      text-align: center;
+    }
+
+    .title-image {
+      position: static;
+      transform: rotate(0deg);
+    }
+}
+
+/* Features */
+
+.features-heading {
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.feature-icon {
+  color: #ef8172;
+  margin-bottom: 10px;
+}
+
+.feature-icon:hover {
+  color: #ff4c68;
+}
+
+.features-text {
+  color: #8f8f8f;
+  padding-top: 10px;
+}
+
+.col-lg-4 {
+  padding: 35px;
+}
+
+/* Testimonials Part */
+
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-heading {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.testimonial-img {
+  border-radius: 50%;
+  width:20%;
+  margin: 25px;
+}
+
+/* Press Part */
+
+#press {
+  padding: 50px;
+  background-color: #ef8172;
+}
+
+.press-img {
+  width: 220px;
+  margin-right: 25px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* Pricing section*/
+
+.card-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+#pricing {
+  padding: 50px;
+}
+
+.pricing-title {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.pricing-text {
+  margin: 20px;
+  font-size: 35px;
+
+}
+
+.card-body {
+  margin: 50px;
+}
+
+.title-image {
+  position: absolute;
+  right: 40px;
+}
+
+#features {
+  position: relative;
+  /*z-index: 1;*/
+  /*z-index'i yazsak da yazmasak da aynı şey oluyor çünkü features section is below the title-image. Check out the stacking pdf */
+}
+
+/* Call to action part */
+
+#cta {
+  padding: 7% 15%;
+}
+
+/* Footer */
+
+#footer {
+  padding: 7% 15%;
+}
+
+.footer-btn {
+  border: 0;
+  margin-bottom: 20px;
+}

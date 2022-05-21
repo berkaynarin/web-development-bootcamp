@@ -1,0 +1,19 @@
+h1 {
+
+  font-style: italic;
+  font-family: inherit;
+}
+
+
+.big-title {
+  font-size: 3rem;
+  font-family: fantasy;
+}
+
+.margin-50 {
+  margin: 50px;
+}
+
+.purple {
+  color: purple;
+}
